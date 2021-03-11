@@ -84,3 +84,8 @@ variable "instance_type" {
   type = string
   default = "m5.xlarge"
 }
+
+# Added for cloudshare to get the account ID
+
+data "aws_caller_identity" "current" {}
+

@@ -51,6 +51,11 @@ resource "aws_key_pair" "fw-ssh-keypair" {
 # Config IAM role with policy
 resource "aws_iam_role" "fw-iam-role" {
   name               = "iam-role-${random_id.deployment_id.hex}"
+
+  # Added to make creation allowed by cloudshare user
+  permissions_boundary = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:policy/BoundaryForAdministratorAccess"
+  ###
+
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
