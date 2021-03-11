@@ -1,3 +1,7 @@
+This repository is a copy of D. Spear's TGW+GWLB Demo for use with cloudshare for SE/Customer hackathons.
+
+Original instructions are below:
+
 # Palo Alto Networks VM-Series Integration with AWS Gateway Load Balancer
 
 This package will help you deploy a full AWS Gateway Load Balancer demonstration environment that leverages the Palo Alto Networks VM-Series NGFWs to show how this solutions secures your Inbound, Outbound and East-West traffic.  This demo will also create a Transit Gateway that is used for E/W and outbound traffic.
