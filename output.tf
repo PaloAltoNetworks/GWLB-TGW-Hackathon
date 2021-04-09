@@ -86,10 +86,11 @@ output "app1_deployment_id" {
 output "app1_fqdn" {
   value = module.app1.app_fqdn
 }
-
-output "app1_mgmt_ip" {
-  value = module.app1.app_mgmt_ip
-}
+  
+# Commented to save CS EIPs (quota)
+#output "app1_mgmt_ip" {
+#  value = module.app1.app_mgmt_ip
+#}
 
 output "app1_gwlbe_id" {
   value = module.app1.app_gwlbe_id
