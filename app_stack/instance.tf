@@ -14,14 +14,14 @@ resource "aws_network_interface" "app-eni" {
   }
 }
 
-resource "aws_eip" "app-mgmt-eip" {
-  vpc               = true
-  network_interface = aws_network_interface.app-eni.id
-  tags = {
-    Name = "app-mgmt-eip-${random_id.deployment_id.hex}"
-  }
-  depends_on = [aws_instance.app_instance]
-}
+#resource "aws_eip" "app-mgmt-eip" {
+#  vpc               = true
+#  network_interface = aws_network_interface.app-eni.id
+#  tags = {
+#    Name = "app-mgmt-eip-${random_id.deployment_id.hex}"
+#  }
+#  depends_on = [aws_instance.app_instance]
+#}
 
 # ---------------------------------------------------------------------------------------------------------------------
 # CREATE WEB SERVER INSTANCE
