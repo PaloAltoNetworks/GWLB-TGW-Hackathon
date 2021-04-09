@@ -71,9 +71,9 @@ output "app2_fqdn" {
   value = module.app2.app_fqdn
 }
 
-output "app2_mgmt_ip" {
-  value = module.app2.app_mgmt_ip
-}
+#output "app2_mgmt_ip" {
+#  value = module.app2.app_mgmt_ip
+#}
 
 output "app2_gwlbe_id" {
   value = module.app2.app_gwlbe_id
